@@ -38,7 +38,7 @@ before_script:
   # Install composer packages before trying to activate themes or plugins
   # - composer install
 
-  - git clone https://github.com/Koodimonni/wordpress-test-template wp-tests
+  - git clone https://github.com/Seravo/wordpress-test-template wp-tests
   - bash wp-tests/bin/install-wp-tests.sh test root '' localhost $WP_VERSION
 
 script:
@@ -78,7 +78,7 @@ before_script:
   # Install composer packages before trying to activate themes or plugins
   # - composer install
 
-  - git clone https://github.com/Koodimonni/wordpress-test-template wp-tests
+  - git clone https://github.com/Seravo/wordpress-test-template wp-tests
   - bash wp-tests/bin/install-wp-tests.sh test root '' localhost $WP_VERSION
 
 script:
@@ -117,7 +117,7 @@ before_script:
   # Install composer packages before trying to activate themes or plugins
   # - composer install
 
-  - git clone https://github.com/Koodimonni/wordpress-test-template wp-tests
+  - git clone https://github.com/Seravo/wordpress-test-template wp-tests
   - bash wp-tests/bin/install-wp-tests.sh test root '' localhost $WP_VERSION
 
 script:
