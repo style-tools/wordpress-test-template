@@ -125,6 +125,8 @@ script:
 ```
 
 ## Example plugins using this
-https://github.com/Seravo/wp-https-domain-alias
-https://github.com/Seravo/wp-dashboard-log-monitor
+
+[https://github.com/Seravo/wp-https-domain-alias](https://github.com/Seravo/wp-https-domain-alias)
+
+[https://github.com/Seravo/wp-dashboard-log-monitor](https://github.com/Seravo/wp-https-domain-alias)
 
