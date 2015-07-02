@@ -87,7 +87,7 @@ script:
 
 ### Example of using custom phpunit tests
 1. Copy tests/ folder and phpunit.xml from this repo into your repo root
-2. Use your plugin name in tests/bootstrap.php: ```define('PLUGIN_NAME')``` & ```define('PLUGIN_FOLDER')```
+2. Use your plugin name in tests/bootstrap.php: ```define('PLUGIN_NAME')```
 3. Add this into your .travis.yml
 
 ```yaml
