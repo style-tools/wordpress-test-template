@@ -17,8 +17,6 @@ DB_HOST=${4-localhost}
 
 WP_VERSION=${5-latest}
 
-PLUGIN_SLUG = $6
-
 # Use this for installing wordpress siteurl
 WP_TEST_URL=${WP_TEST_URL-http://localhost:12000}
 
@@ -132,7 +130,7 @@ link_this_project() {
     'plugin' )
         #ln -s $FOLDER_PATH $WP_CORE_DIR/wp-content/plugins/$FOLDER_NAME
         cp -rf $FOLDER_PATH $WP_CORE_DIR/wp-content/plugins/
-        php wp-cli.phar plugin activate $PLUGIN_SLUG --path=$WP_CORE_DIR
+        php wp-cli.phar plugin activate $FOLDER_NAME --path=$WP_CORE_DIR
         ;;
     'theme' )
         ln -s $FOLDER_PATH $WP_CORE_DIR/wp-content/themes/$FOLDER_NAME
