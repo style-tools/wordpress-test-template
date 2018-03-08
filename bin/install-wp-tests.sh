@@ -130,6 +130,7 @@ link_this_project() {
     'plugin' )
         #ln -s $FOLDER_PATH $WP_CORE_DIR/wp-content/plugins/$FOLDER_NAME
         cp -rf $FOLDER_PATH $WP_CORE_DIR/wp-content/plugins/
+        cd $WP_CORE_DIR/wp-content/plugins/
         zip -r "$WP_CORE_DIR/wp-content/plugins/$FOLDER_NAME.zip" $FOLDER_NAME
         php wp-cli.phar plugin activate $FOLDER_NAME --path=$WP_CORE_DIR
         ;;
