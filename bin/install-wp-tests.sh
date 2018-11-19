@@ -134,6 +134,7 @@ link_this_project() {
         zip -r -q "$WP_CORE_DIR/wp-content/plugins/$FOLDER_NAME.zip" $FOLDER_NAME
         cd $DIR
         php wp-cli.phar plugin activate $FOLDER_NAME --path=$WP_CORE_DIR
+        php wp-cli.phar plugin list
         ;;
     'theme' )
         ln -s $FOLDER_PATH $WP_CORE_DIR/wp-content/themes/$FOLDER_NAME
