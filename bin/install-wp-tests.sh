@@ -148,6 +148,8 @@ install_real_wp() {
   cd $DIR
   download https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar wp-cli.phar
   php wp-cli.phar core install  --url=$WP_TEST_URL --title='Test' --admin_user=$WP_TEST_USER --admin_password=$WP_TEST_USER_PASS --admin_email="$WP_TEST_USER@wordpress.dev" --path=$WP_CORE_DIR
+  
+  php wp-cli.phar theme install twentynineteen --activate
 }
 
 install_rspec_requirements() {
